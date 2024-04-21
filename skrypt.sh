@@ -12,3 +12,13 @@ do
         echo "$dzisiejsza_data" >> "$filename"
 done
 
+case "$1" in
+	--help | -h)
+		help ;;
+	*)
+esac
+
+function help {
+	echo "-h, --help,  jeżeli potrzebujesz pomocy"
+}
+
